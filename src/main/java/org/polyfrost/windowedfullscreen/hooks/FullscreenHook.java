@@ -21,7 +21,7 @@ public class FullscreenHook {
     private boolean lastFullscreen = false;
 
     public boolean fullscreen() {
-        if (!WindowedFullscreen.config.instantFullscreen || !WindowedFullscreen.config.windowedFullscreen || Util.getOSType() != Util.EnumOS.WINDOWS) {
+        if (!WindowedFullscreen.config.windowedFullscreen || Util.getOSType() != Util.EnumOS.WINDOWS) {
             return false;
         }
 
